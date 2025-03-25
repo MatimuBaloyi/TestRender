@@ -2,13 +2,12 @@
   "name": "todo-list-app",
   "version": "1.0.0",
   "description": "Advanced To-Do List application with Node.js backend",
-  "main": "server.js",
-"scripts": {
+  "main": "backend/server.js",
+  "scripts": {
     "start": "node backend/server.js",
-    "dev": "nodemon server.js",
+    "dev": "nodemon backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
-,
+  },
   "keywords": [
     "todo",
     "nodejs",
@@ -17,6 +16,9 @@
   ],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",

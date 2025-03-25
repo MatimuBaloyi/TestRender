@@ -1,6 +1,7 @@
-services:
+    services:
   - type: web
-    name: backend
-    rootDirectory: ./backend
-    buildCommand: npm install
-    startCommand: node backend/server.js
+    name: your-backend-service-name
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    rootDir: backend

@@ -1,7 +1,9 @@
-    services:
+services:
   - type: web
-    name: your-backend-service-name
+    name: your-backend-service
     runtime: node
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && node server.js
-    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.x

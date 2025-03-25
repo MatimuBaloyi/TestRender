@@ -2,6 +2,7 @@ services:
   - type: web
     name: your-backend-service
     runtime: node
+    rootDir: .
     buildCommand: npm install
     startCommand: npm start
     envVars:
